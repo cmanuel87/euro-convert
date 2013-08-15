@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<GTK-Interface>
+
+<project>
+  <name>Uno</name>
+  <program_name>uno</program_name>
+  <directory></directory>
+  <source_directory>src</source_directory>
+  <pixmaps_directory>pixmaps</pixmaps_directory>
+  <language>C</language>
+  <gnome_support>False</gnome_support>
+  <gettext_support>False</gettext_support>
+</project>
+
+<widget>
+  <class>GtkWindow</class>
+  <name>window1</name>
+  <signal>
+    <name>destroy</name>
+    <handler>on_window1_destroy</handler>
+    <last_modification_time>Thu, 08 Aug 2002 16:22:11 GMT</last_modification_time>
+  </signal>
+  <title>Conversor</title>
+  <type>GTK_WINDOW_TOPLEVEL</type>
+  <position>GTK_WIN_POS_CENTER</position>
+  <modal>False</modal>
+  <allow_shrink>False</allow_shrink>
+  <allow_grow>False</allow_grow>
+  <auto_shrink>False</auto_shrink>
+
+  <widget>
+    <class>GtkVBox</class>
+    <name>vbox2</name>
+    <homogeneous>False</homogeneous>
+    <spacing>0</spacing>
+
+    <widget>
+      <class>GtkLabel</class>
+      <name>label1</name>
+      <label>Euro Conversor:
+Introduzca la cantidad a convertir</label>
+      <justify>GTK_JUSTIFY_CENTER</justify>
+      <wrap>False</wrap>
+      <xalign>0.5</xalign>
+      <yalign>0.5</yalign>
+      <xpad>10</xpad>
+      <ypad>10</ypad>
+      <child>
+	<padding>0</padding>
+	<expand>True</expand>
+	<fill>True</fill>
+      </child>
+    </widget>
+
+    <widget>
+      <class>GtkHBox</class>
+      <name>hbox2</name>
+      <homogeneous>False</homogeneous>
+      <spacing>0</spacing>
+      <child>
+	<padding>0</padding>
+	<expand>True</expand>
+	<fill>True</fill>
+      </child>
+
+      <widget>
+	<class>GtkLabel</class>
+	<name>label2</name>
+	<label>Pesetas</label>
+	<justify>GTK_JUSTIFY_RIGHT</justify>
+	<wrap>False</wrap>
+	<xalign>0.5</xalign>
+	<yalign>0.5</yalign>
+	<xpad>5</xpad>
+	<ypad>5</ypad>
+	<child>
+	  <padding>0</padding>
+	  <expand>True</expand>
+	  <fill>True</fill>
+	</child>
+      </widget>
+
+      <widget>
+	<class>GtkEntry</class>
+	<name>entry1</name>
+	<can_focus>True</can_focus>
+	<signal>
+	  <name>key_press_event</name>
+	  <handler>on_entry1_key_press_event</handler>
+	  <last_modification_time>Mon, 12 Aug 2002 13:18:49 GMT</last_modification_time>
+	</signal>
+	<editable>True</editable>
+	<text_visible>True</text_visible>
+	<text_max_length>0</text_max_length>
+	<text></text>
+	<child>
+	  <padding>5</padding>
+	  <expand>False</expand>
+	  <fill>True</fill>
+	</child>
+      </widget>
+    </widget>
+
+    <widget>
+      <class>GtkHBox</class>
+      <name>hbox3</name>
+      <homogeneous>False</homogeneous>
+      <spacing>0</spacing>
+      <child>
+	<padding>0</padding>
+	<expand>True</expand>
+	<fill>True</fill>
+      </child>
+
+      <widget>
+	<class>GtkLabel</class>
+	<name>label3</name>
+	<label>Euros</label>
+	<justify>GTK_JUSTIFY_RIGHT</justify>
+	<wrap>False</wrap>
+	<xalign>0.5</xalign>
+	<yalign>0.5</yalign>
+	<xpad>5</xpad>
+	<ypad>5</ypad>
+	<child>
+	  <padding>0</padding>
+	  <expand>True</expand>
+	  <fill>False</fill>
+	</child>
+      </widget>
+
+      <widget>
+	<class>GtkEntry</class>
+	<name>entry2</name>
+	<can_focus>True</can_focus>
+	<signal>
+	  <name>key_press_event</name>
+	  <handler>on_entry2_key_press_event</handler>
+	  <last_modification_time>Mon, 12 Aug 2002 13:18:59 GMT</last_modification_time>
+	</signal>
+	<editable>True</editable>
+	<text_visible>True</text_visible>
+	<text_max_length>0</text_max_length>
+	<text></text>
+	<child>
+	  <padding>5</padding>
+	  <expand>False</expand>
+	  <fill>True</fill>
+	</child>
+      </widget>
+    </widget>
+  </widget>
+</widget>
+
+</GTK-Interface>
